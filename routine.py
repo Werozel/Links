@@ -65,6 +65,7 @@ def get_route(first, second):
             if depth > 7:
                 return None
             ids_to_check.append("")
+            print(str(len(ids_to_check) - count) + "more ids to check")
             continue
 
         if id < 0:
@@ -76,6 +77,7 @@ def get_route(first, second):
 
         user = get_user(id)
         count += 1
+        print("Checking " + str(count) + "th user")
 
         if id not in seen_ids:
             seen_ids.append(id)
