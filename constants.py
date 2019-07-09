@@ -1,0 +1,3 @@
+
+
+VK_PERMISSIONS = 2
